@@ -1,0 +1,21 @@
+# DISCRIMINATOR
+disc_hidden_units: [64, 128, 256, 512]
+dropout_rate: 0.2
+
+# GENERATOR
+gen_hidden_units: [128, 256, 512]
+latent_dims: 128
+output_dims: 1
+
+# DATA
+image_dims: [28, 28, 1]
+batch_size: 32
+
+# TRAINING
+model_dir: "../gan_training/wgan"
+epochs: 30
+lr: 0.0002
+display_images: 10
+
+critic_extra_train_steps: 3
+grad_penalty_weight: 10.0
