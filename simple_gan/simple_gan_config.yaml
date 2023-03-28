@@ -1,0 +1,18 @@
+# DISCRIMINATOR
+disc_hidden_units: [1024, 512, 256]
+dropout_rate: 0.3 
+
+# GENERATOR
+gen_hidden_units: [256, 512, 1024]
+latent_dims: 100
+
+# DATA
+image_dims: [28, 28]
+dataset: digit
+batch_size: 128
+
+# TRAINING
+model_dir: "../saved_models/simple_gan"
+epochs: 50
+lr: 0.0002
+display_images: 10
